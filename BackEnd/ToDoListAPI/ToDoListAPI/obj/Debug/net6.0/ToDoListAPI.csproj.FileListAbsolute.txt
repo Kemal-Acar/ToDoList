@@ -45,3 +45,7 @@ C:\Users\kemal.acar\Desktop\Other\privat\ToDoList\BackEnd\ToDoListAPI\ToDoListAP
 C:\Users\kemal.acar\Desktop\Other\privat\ToDoList\BackEnd\ToDoListAPI\ToDoListAPI\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
 C:\Users\kemal.acar\Desktop\Other\privat\ToDoList\BackEnd\ToDoListAPI\ToDoListAPI\bin\Debug\net6.0\ToDoList.Core.dll
 C:\Users\kemal.acar\Desktop\Other\privat\ToDoList\BackEnd\ToDoListAPI\ToDoListAPI\bin\Debug\net6.0\ToDoList.Core.pdb
+C:\Users\kemal.acar\Desktop\Other\privat\ToDoList\BackEnd\ToDoListAPI\ToDoListAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\kemal.acar\Desktop\Other\privat\ToDoList\BackEnd\ToDoListAPI\ToDoListAPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\kemal.acar\Desktop\Other\privat\ToDoList\BackEnd\ToDoListAPI\ToDoListAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\kemal.acar\Desktop\Other\privat\ToDoList\BackEnd\ToDoListAPI\ToDoListAPI\bin\Debug\net6.0\MongoDB.Driver.dll

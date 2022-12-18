@@ -2,7 +2,7 @@
 {
     public class ItemsDbConfig
     {
-        public string DatabseName { get; set; }
+        public string Database_Name { get; set; }
         public string Items_Collection_Name { get; set; }
         public string Connection_String { get; set; }
     }

@@ -1,24 +1,17 @@
 ﻿namespace ToDoList.Core.Services
 {
+    using MongoDB.Driver;
     using ToDoList.Core.Interfaces;
     using ToDoList.Core.Model;
 
     public class ItemsService : IItemService
     {
-        public ItemsService()
+        private readonly IMongoCollection<ItemEntity> items;
+        public ItemsService(IDbClient dbClient)
         {
-            24/47
+            items = dbClient.GetItemsCollection();
         }
-        public List<ItemEntity> GetItems()
-        {
-            return new List<ItemEntity>()
-            {
-                new ItemEntity()
-                {
-                    Name= "Test",
-                    CreationDate= DateTime.UtcNow
-                }
-            };
-        }
+        public List<ItemEntity> GetItems() => items.Find(item=> true).ToList();
+        
     }
 }

@@ -6,10 +6,11 @@ namespace ToDoList.Core.Model
     {
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-        public Guid Id { get; set; }
+        public string Id { get; set; }
 
         public string Name { get; set; }
 
+        [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]
         public DateTime CreationDate { get; set; }
 
         public string Category { get; set; }
