@@ -14,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 builder.Services.AddTransient<IItemService, ItemsService>();
-builder.Services.AddSingleton<IDbClient,DbService>();
+builder.Services.AddSingleton<IDbService,DbService>();
 builder.Services.Configure<ItemsDbConfig>(builder.Configuration);
 var app = builder.Build();
 

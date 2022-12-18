@@ -1,22 +1,29 @@
 ﻿namespace ToDoListAPI.Mediator
 {
     using MediatR;
+    using ToDoList.Core.Interfaces;
+    using ToDoList.Core.Model;
 
     public class AddItemRequest : IRequest {
 
-        public AddItemRequest(string name)
+        public AddItemRequest(ItemEntity item)
         {
-            this.Name = name;
+            this.Item = item;
         }
 
-        public string Name { get; set; }
+        public ItemEntity Item { get; set; }
 
         public class AddItemRequestHandler : AsyncRequestHandler<AddItemRequest>
         {
+            private readonly IItemService itemService;
+
+            public AddItemRequestHandler(IItemService itemService)
+            {
+                this.itemService = itemService;
+            }
             protected override async Task Handle(AddItemRequest request, CancellationToken cancellationToken)
             {
-                var name = request.Name;
-                await Task.Delay(500);
+                itemService.AddItem(request.Item);
             }
         }
     }

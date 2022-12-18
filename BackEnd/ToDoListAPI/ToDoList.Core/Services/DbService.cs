@@ -1,12 +1,12 @@
-﻿using Microsoft.Extensions.Options;
-using MongoDB.Driver;
-using ToDoList.Core.Configuration;
-using ToDoList.Core.Interfaces;
-using ToDoList.Core.Model;
-
-namespace ToDoList.Core.Services
+﻿namespace ToDoList.Core.Services
 {
-    public class DbService : IDbClient
+    using Microsoft.Extensions.Options;
+    using MongoDB.Driver;
+    using ToDoList.Core.Configuration;
+    using ToDoList.Core.Interfaces;
+    using ToDoList.Core.Model;
+
+    public class DbService : IDbService
     {
         private readonly IMongoCollection<ItemEntity> items;
         public DbService(IOptions<ItemsDbConfig> itemsDbConfig)
